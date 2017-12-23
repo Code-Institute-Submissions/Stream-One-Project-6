@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Final for stream one of Code Institute course.",
   "main": "",
-  "dependencies": {},
+  "dependencies": {
+    "angularjs": "0.0.1"
+  },
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
