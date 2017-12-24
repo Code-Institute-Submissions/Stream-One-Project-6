@@ -28,6 +28,10 @@ gulp.task('dev',function(){
   gulp.src('src/app/**')
   .pipe(gulp.dest('dev-build/app'));
 
+   // >>Copy Data
+  gulp.src('src/data/**')
+  .pipe(gulp.dest('dev-build/data'));
+
   // >>Gather jQuery
   gulp.src('node_modules/jquery/dist/jquery.js')
   .pipe(gulp.dest('dev-build/static/lib/js'));
