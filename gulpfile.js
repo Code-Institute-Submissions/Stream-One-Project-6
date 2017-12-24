@@ -30,15 +30,15 @@ gulp.task('dev',function(){
 
   // >>Gather jQuery
   gulp.src('node_modules/jquery/dist/jquery.js')
-  .pipe(gulp.dest('dev-build/static/js/'));
+  .pipe(gulp.dest('dev-build/static/lib/js'));
 
   // >>Gather Boostrap
   gulp.src('node_modules/bootstrap/dist/**/*')
-  .pipe(gulp.dest('dev-build/static'));
+  .pipe(gulp.dest('dev-build/static/lib'));
 
   // >>Gather Angular
   gulp.src(['node_modules/angular/angular.js', 'node_modules/angular-route/angular-route.js'])
-  .pipe(gulp.dest('dev-build/static/lib/js/'));
+  .pipe(gulp.dest('dev-build/static/lib/js'));
 });
 
 // >dev-build
