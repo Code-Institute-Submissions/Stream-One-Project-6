@@ -15,6 +15,10 @@ gulp.task('dev',function(){
   .pipe(concat('index.html'))
   .pipe(gulp.dest('dev-build'));
 
+  // >>Build app
+  gulp.src('src/app/**')
+  .pipe(gulp.dest('dev-build/app'));
+
   // >>Gather jQuery
   gulp.src('node_modules/jquery/dist/jquery.js')
   .pipe(gulp.dest('dev-build/static/js/'));
