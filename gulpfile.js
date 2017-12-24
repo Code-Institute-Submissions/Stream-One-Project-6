@@ -46,4 +46,11 @@ gulp.task('dev-build',function(cb){
   runSequence('clean',['dev'],cb);
 });
 
+// >Watch
+gulp.task('watch',function()
+{
+  // >>dev
+  gulp.watch('src/**',['dev']);
+});
+
 gulp.task('default',['dev']);
