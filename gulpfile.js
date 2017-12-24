@@ -1,5 +1,7 @@
 const gulp=require('gulp');
 const concat=require('gulp-concat');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
 const del=require('del');
 const runSequence=require('run-sequence');
 
@@ -14,6 +16,13 @@ gulp.task('dev',function(){
   gulp.src(['src/header.html', 'src/body.html', 'src/footer.html'])
   .pipe(concat('index.html'))
   .pipe(gulp.dest('dev-build'));
+
+  // >>MainStyleSheet
+  gulp.src('src/static/scss/main.scss')
+  .pipe(sass().on('error',sass.logError))
+  .pipe(autoprefixer())
+  .pipe(gulp.dest('dev-build/static/css'));
+  
 
   // >>Build app
   gulp.src('src/app/**')
