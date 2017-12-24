@@ -15,10 +15,16 @@ gulp.task('dev',function(){
   .pipe(concat('index.html'))
   .pipe(gulp.dest('dev-build'));
 
+  // >>Gather jQuery
+  gulp.src('node_modules/jquery/dist/jquery.js')
+  .pipe(gulp.dest('dev-build/static/js/'));
+
+  // >>Gather Boostrap
+  gulp.src('node_modules/bootstrap/dist/**/*')
+  .pipe(gulp.dest('dev-build/static'));
+
   // >>Gather Angular
-  gulp.src('node_modules/angular/angular.js')
-  .pipe(gulp.dest('dev-build/static/lib/js/'));
-  gulp.src('node_modules/angular-route/angular-route.js')
+  gulp.src(['node_modules/angular/angular.js', 'node_modules/angular-route/angular-route.js'])
   .pipe(gulp.dest('dev-build/static/lib/js/'));
 });
 
