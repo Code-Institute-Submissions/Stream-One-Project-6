@@ -1,1 +1,20 @@
-Hello World!
+<!-- About -->
+<section id="about" class="main-section">
+  <div class="container" data-ng-controller="memberList">
+    <h2>About</h2>
+    <div class="row">
+      <p class="col-xs-12" data-ng-repeat="item2 in data[0]">{{item2.desc}}</p>
+    </div>
+    <div class="row">
+      <div class="col-sm-6 col-md-4" data-ng-repeat="item in data[1]">
+        <div class="thumbnail">
+          <img class="img-rounded" data-ng-src="{{item.img}}" alt="{{item.name}}">
+          <div class="caption">
+            <h3>{{item.name}}</h3>
+            <p>{{item.desc}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>

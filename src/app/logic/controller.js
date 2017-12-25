@@ -1,11 +1,17 @@
 app.controller('navbar',function($scope, serverData){
-
-  // console.log(serverData.getLink());
+  // Generate site wide nav links
   serverData.getLink().then(function(data){
-    console.log(data);
-    $scope.links=data.data;
+    $scope.data=data.data;
   },function(err){
     console.log(err);
   });
-  
+});
+
+app.controller('memberList',function($scope, serverData){
+  // Generate member list
+  serverData.getMember().then(function(data){
+    $scope.data=data.data;
+  },function(err){
+    console.log(err);
+  });
 });
