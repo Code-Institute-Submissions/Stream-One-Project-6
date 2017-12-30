@@ -18,3 +18,25 @@
     </div>
   </div> 
 </section>
+
+<!-- Music -->
+<section id="music" class="main-section" data-ng-controller="audioCtl">
+  <div class="container">
+    <h2 class="title">Music</h2>
+    <div class="row">
+      <div class="music-player col-xs-12 col-sm-offset-3 col-sm-6">
+        <div class="thumbnail">
+          <img class="cover-art" data-ng-src="{{cover}}" alt="{{title}}">
+          <i class="glyphicon" data-ng-click="playback()" aria-hidden="true"></i>
+          <div class="caption">
+            <h3>{{playing}}</h3>
+            <!-- <p>{{item.desc}}</p> -->
+          </div>
+            <ul class="list-group">
+              <li  class="list-group-item" data-ng-repeat="(id,item) in data" data-ng-click="playback(id)">{{item.title}}</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
