@@ -9,10 +9,14 @@ app.factory("serverData",function($http){
   function getAudio() {
     return $http.get("data/audioData.json");
   }
+  function getEvent() {
+    return $http.get("data/eventData.json");
+  }
   return {
     getLink: getLink,
     getMember: getMember,
-    getAudio: getAudio
+    getAudio: getAudio,
+    getEvent: getEvent
   }
 });
 

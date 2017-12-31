@@ -116,3 +116,11 @@ app.controller("audioCtl",function($scope, serverData,jukebox){
     console.error(err);
   });
 });
+
+app.controller("event",function($scope, serverData){
+   serverData.getEvent().then(function(data){
+    $scope.data=data.data;
+  },function(err){
+    console.log(err);
+  });
+})
