@@ -123,4 +123,66 @@ app.controller("event",function($scope, serverData){
   },function(err){
     console.log(err);
   });
-})
+});
+
+app.controller("book",function($scope, serverData, $timeout, $window){
+  serverData
+  .getBooking()
+  .then(function(data){
+    // >>DateTime picker setup
+    $('#dtBox').DateTimePicker(
+      {
+        dateFormat: "MM-dd-yyyy",
+        timeFormat: 'hh:mm AA'
+      }
+    );
+    
+    // >>Set data
+    $scope.data=data.data;
+
+    // >>Form submit function
+    $scope.submit=function(){
+      $scope.event=$scope.data.type[$scope.type].event;
+      $scope.price=$scope.data.type[$scope.type].price;
+
+      // >>>Validate Date
+      if(!dateValidation($scope.date)){
+        return;
+      }
+      
+      // >>>Show confirmation modal
+      $('#confirm-modal').modal('show');
+      $('.modal .btn-success').click(function(){
+        $('#book').slideUp(function(){
+          $('#thankyou').fadeIn();
+          $timeout(function(){
+            $window.location.assign('/');
+          },1000);
+        });
+      });
+    }    
+  },function(err){
+    console.error(err);
+  });
+  // >>Date validation function
+  function dateValidation(dateStr){
+    // >>>Check to see if date is not already booked.
+    for (var i = $scope.data.booked.length - 1; i >= 0; i--) {
+      if($scope.data.booked[i]==dateStr){
+        $scope.form.date.$invalid=true;
+        return false;
+      }
+    }
+    // >>>Check to see if date is at least 60 days in the future
+    var date=new Date(dateStr);
+    var now=new Date();
+    now=new Date(now.getFullYear(),now.getMonth()+$scope.data.notice,now.getDate());
+    if(date.getTime()>now.getTime()){
+      return true;
+    }
+    else{
+      $scope.form.date.$invalid=true;
+      return false;
+    }
+  }
+});

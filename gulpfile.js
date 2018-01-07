@@ -43,6 +43,22 @@ gulp.task('dev',function(){
   // >>Gather Angular
   gulp.src(['node_modules/angular/angular.js', 'node_modules/angular-route/angular-route.js'])
   .pipe(gulp.dest('dev-build/static/lib/js'));
+
+  // >>DateTime Picker
+  gulp.src('node_modules/datetimepicker/dist/DateTimePicker.min.css')
+  .pipe(gulp.dest('dev-build/static/lib/css'));
+  gulp.src('node_modules/datetimepicker/dist/DateTimePicker-ltie9.min.css')
+  .pipe(gulp.dest('dev-build/static/lib/css'));
+  gulp.src('node_modules/datetimepicker/dist/DateTimePicker_iOS_fix.js')
+  .pipe(gulp.dest('dev-build/static/lib/js'));
+  gulp.src('node_modules/datetimepicker/dist/DateTimePicker.min.js')
+  .pipe(gulp.dest('dev-build/static/lib/js'));
+  gulp.src('node_modules/datetimepicker/dist/DateTimePicker-ltie9.min.js')
+  .pipe(gulp.dest('dev-build/static/lib/js'));
+  gulp.src('node_modules/datetimepicker/dist/i18n/DateTimePicker-i18n.js')
+  .pipe(gulp.dest('dev-build/static/lib/js'));
+  gulp.src('node_modules/datetimepicker/dist/DateTimePicker.min.css')
+  .pipe(gulp.dest('dev-build/static/lib/css'));
 });
 
 // >dev-build
@@ -54,7 +70,7 @@ gulp.task('dev-build',function(cb){
 gulp.task('watch',function()
 {
   // >>dev
-  gulp.watch('src/**',['dev']);
+  gulp.watch('src/**',['dev-build']);
 });
 
 gulp.task('default',['dev']);

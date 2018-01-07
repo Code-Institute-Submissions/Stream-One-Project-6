@@ -9,7 +9,8 @@
     "bootstrap": "^3.3.7",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-sass": "^3.1.0",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "datetimepicker": "^0.1.38"
   },
   "devDependencies": {
     "del": "^3.0.0",
