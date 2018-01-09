@@ -1,3 +1,20 @@
+<!-- Event -->
+<section id="event" class="main-section" data-ng-controller='event'>
+  <div class="container">
+    <h1 class="title">Upcoming Events</h1>
+    <div class="row">
+      <div class="col-sm-6 col-md-4"  data-ng-repeat='event in data'>
+        <div class="thumbnail" >
+          <img class="img-rounded" data-ng-src="{{event.img}}" alt="{{event.city}}">
+          <div class="caption">
+            <h2>{{event.loc}} on {{event.date}}</h2>
+            <p>{{event.desc}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Info -->
 <section id="info" class="main-section" data-ng-controller='info'>
   <div class="container">
