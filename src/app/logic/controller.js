@@ -113,7 +113,7 @@ app.controller("audioCtl",function($scope, serverData,jukebox){
 });
 
 app.controller("event",function($scope, serverData){
-   serverData.getEvent().then(function(data){
+  serverData.getEvent().then(function(data){
     $scope.data=data.data;
   },function(err){
     console.log(err);
@@ -148,11 +148,11 @@ app.controller("book",function($scope, serverData, $timeout, $window){
       // >>>Show confirmation modal
       $('#confirm-modal').modal('show');
       $('.modal .btn-success').click(function(){
-        $('#book').slideUp(function(){
+        $('.main-section').slideUp(function(){
           $('#thankyou').fadeIn();
           $timeout(function(){
             $window.location.assign('/');
-          },1000);
+          },2000);
         });
       });
     }    
@@ -180,4 +180,13 @@ app.controller("book",function($scope, serverData, $timeout, $window){
       return false;
     }
   }
+});
+
+app.controller("info",function($scope, serverData){
+  // >Generate event type info
+  serverData.getType().then(function(data){
+    $scope.data=data.data;
+  },function(err){
+    console.error(err);
+  });
 });

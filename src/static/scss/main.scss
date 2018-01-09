@@ -12,9 +12,9 @@ form{
     span{
       color: red;
     }
-  }
-    
+  }   
 }
+
 #thankyou{
   display: none;
   .message{
@@ -46,7 +46,18 @@ form{
     }
   }
 }
-
+#info{
+  .glyphicon{
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+  }
+  .caption{
+    h2{
+      text-align: center;
+    }
+  }
+}
 .music-player{
   position: relative;
   .glyphicon{
@@ -62,4 +73,7 @@ form{
     max-height: 350px;
     overflow: auto;
   }
+}
+.main-section{
+  margin: 20px 0;
 }

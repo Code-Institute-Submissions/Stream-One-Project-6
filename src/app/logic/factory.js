@@ -15,12 +15,16 @@ app.factory("serverData",function($http){
   function getBooking() {
     return $http.get("data/bookingData.json");
   }
+  function getType() {
+    return $http.get("data/typeData.json");
+  }
   return {
     getLink: getLink,
     getMember: getMember,
     getAudio: getAudio,
     getEvent: getEvent,
-    getBooking: getBooking
+    getBooking: getBooking,
+    getType: getType
   }
 });
 
