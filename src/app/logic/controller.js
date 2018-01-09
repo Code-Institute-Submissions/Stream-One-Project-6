@@ -28,11 +28,6 @@ app.controller("audioCtl",function($scope, serverData,jukebox){
 
     // >>Playback control
     $scope.playback=function(id){
-      if(id==undefined){
-        console.error('Playback source undefined (needs id)');
-        return;
-      } 
-
       switch(status(id)){
         case "playing":
           jukebox.playpause();
