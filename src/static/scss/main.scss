@@ -58,6 +58,33 @@ form{
     }
   }
 }
+#loader{
+  background-color: white;
+  // display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  p{
+    font-size: 70px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: loading .5s infinite;
+  }
+}
+
+@keyframes loading{
+  0%,100%{
+    opacity: 1;
+  }
+  50%{  
+    opacity: 0;
+  }
+}
+
 .music-player{
   position: relative;
   .glyphicon{
