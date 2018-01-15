@@ -2,6 +2,20 @@ app.controller("navbar",function($scope, serverData){
   // >Generate site wide nav links
   serverData.getLink().then(function(data){
     $scope.data=data.data;
+
+    $( "ul.nav" ).click(function(event){
+      
+      var ele = $(event.target);
+      // console.log(ele[0].hash);
+      var hash=$(ele[0].hash)
+      if(hash){
+        // console.log('correct');
+        event.preventDefault();
+        $('html, body').stop().animate({
+            'scrollTop': hash.offset().top
+        }, 900, 'swing');
+      }
+    });
   },function(err){
     console.error(err);
   });

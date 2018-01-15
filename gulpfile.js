@@ -23,6 +23,9 @@ gulp.task('dev',function(){
   .pipe(autoprefixer())
   .pipe(gulp.dest('dev-build/static/css'));
   
+  // >>MainJS
+  gulp.src('src/static/js/main.js')
+  .pipe(gulp.dest('dev-build/static/js'));
 
   // >>Build app
   gulp.src('src/app/**')

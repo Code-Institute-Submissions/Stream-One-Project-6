@@ -4,19 +4,19 @@
     "content":"About"
   },
   {
-    "href":"/#info",
-    "content":"Event Info"
-  },
-  {
     "href":"/#music",
     "content":"Music"
+  },
+  {
+    "href":"/#info",
+    "content":"Event Info"
   },
   {
     "href":"/#event",
     "content":"Events"
   },
   {
-    "href":"/booking",
+    "href":"/#booking",
     "content":"Booking"
   }
 ]

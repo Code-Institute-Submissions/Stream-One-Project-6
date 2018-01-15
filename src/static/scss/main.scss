@@ -8,7 +8,11 @@ main{
 }
 
 form{
+  .label{
+    font-size: 12px;
+  }
   fieldset{
+    padding: 10px 0;
     span{
       color: red;
     }
