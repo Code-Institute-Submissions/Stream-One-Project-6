@@ -6,10 +6,8 @@ app.controller("navbar",function($scope, serverData){
     $( "ul.nav" ).click(function(event){
       
       var ele = $(event.target);
-      // console.log(ele[0].hash);
       var hash=$(ele[0].hash)
       if(hash){
-        // console.log('correct');
         event.preventDefault();
         $('html, body').stop().animate({
             'scrollTop': hash.offset().top
@@ -32,9 +30,7 @@ app.controller("memberList",function($scope, serverData){
 
 app.controller("audioCtl",function($scope, serverData,jukebox){
   // >Generate audio list
-  serverData
-  .getAudio()
-  .then(function(data){
+  serverData.getAudio().then(function(data){
     $scope.data=data.data;
 
     // >>Set Audio Player
@@ -135,9 +131,7 @@ app.controller("event",function($scope, serverData){
 });
 
 app.controller("book",function($scope, serverData, $timeout, $window){
-  serverData
-  .getBooking()
-  .then(function(data){
+  serverData.getBooking().then(function(data){
     // >>DateTime picker setup
     $('#dtBox').DateTimePicker(
       {

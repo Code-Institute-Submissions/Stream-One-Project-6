@@ -7,20 +7,19 @@
     "angular": "^1.6.8",
     "angular-route": "^1.6.8",
     "bootstrap": "^3.3.7",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0",
-    "jquery": "^3.2.1",
-    "datetimepicker": "^0.1.38"
+    "datetimepicker": "^0.1.38",
+    "jquery": "^3.2.1"
   },
   "devDependencies": {
+    "angular-mocks": "^1.6.8",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
     "run-sequence": "^2.2.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "author": "",
   "license": "ISC"
 }
