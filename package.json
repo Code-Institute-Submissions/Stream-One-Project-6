@@ -8,6 +8,9 @@
     "angular-route": "^1.6.8",
     "bootstrap": "^3.3.7",
     "datetimepicker": "^0.1.38",
+    "gulp-html-minify": "0.0.14",
+    "gulp-ng-annotate": "^2.1.0",
+    "gulp-uglify": "^3.0.0",
     "jquery": "^3.2.1"
   },
   "devDependencies": {
