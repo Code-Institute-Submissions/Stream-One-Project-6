@@ -3,14 +3,14 @@ describe('AngularJS App: app', function(){
     angular.mock.module("app");
   });
   describe('controller',function(){
-    describe('navbar', function(){
+    describe('navbarCtrl', function(){
       var scope, $location, createController, $serverData;
       
       beforeEach(inject(function ($rootScope, $controller, _$location_, serverData){
         $location = _$location_;
         scope = $rootScope.$new();
         $serverData = serverData;
-        createController = $controller('navbar', {'$scope': scope});
+        createController = $controller('navbarCtrl', {'$scope': scope});
       }));
 
       it('should be defined', function(){
@@ -28,14 +28,14 @@ describe('AngularJS App: app', function(){
           expect($serverData.getLink()).toBeDefined();
       });
     });
-    describe('memberList', function(){
+    describe('memberCtrl', function(){
       var scope, $location, createController, $serverData;
       
       beforeEach(inject(function ($rootScope, $controller, _$location_, serverData){
         $location = _$location_;
         scope = $rootScope.$new();
         $serverData = serverData;
-        createController = $controller('memberList', {'$scope': scope});
+        createController = $controller('memberCtrl', {'$scope': scope});
       }));
 
       it('should be defined', function(){
@@ -52,14 +52,14 @@ describe('AngularJS App: app', function(){
           expect($serverData.getMember()).toBeDefined();
       });
     });
-    describe('audioCtl', function(){
+    describe('audioCtrl', function(){
       var scope, $location, createController, $serverData;
       
       beforeEach(inject(function ($rootScope, $controller, _$location_, serverData){
         $location = _$location_;
         scope = $rootScope.$new();
         $serverData = serverData;
-        createController = $controller('audioCtl', {'$scope': scope});
+        createController = $controller('audioCtrl', {'$scope': scope});
       }));
 
       it('should be defined', function(){
@@ -77,14 +77,14 @@ describe('AngularJS App: app', function(){
           expect($serverData.getAudio()).toBeDefined();
       });
     });
-    describe('event', function(){
+    describe('eventCtrl', function(){
       var scope, $location, createController, $serverData;
       
       beforeEach(inject(function ($rootScope, $controller, _$location_, serverData){
         $location = _$location_;
         scope = $rootScope.$new();
         $serverData = serverData;
-        createController = $controller('event', {'$scope': scope});
+        createController = $controller('eventCtrl', {'$scope': scope});
       }));
 
       it('should be defined', function(){
@@ -102,14 +102,14 @@ describe('AngularJS App: app', function(){
           expect($serverData.getEvent()).toBeDefined();
       });
     });
-    describe('book', function(){
+    describe('bookCtrl', function(){
       var scope, $location, createController, $serverData;
       
       beforeEach(inject(function ($rootScope, $controller, _$location_, serverData){
         $location = _$location_;
         scope = $rootScope.$new();
         $serverData = serverData;
-        createController = $controller('book', {'$scope': scope});
+        createController = $controller('bookCtrl', {'$scope': scope});
       }));
 
       it('should be defined', function(){
@@ -127,14 +127,14 @@ describe('AngularJS App: app', function(){
           expect($serverData.getBooking()).toBeDefined();
       });
     });
-    describe('info', function(){
+    describe('infoCtrl', function(){
       var scope, $location, createController, $serverData;
       
       beforeEach(inject(function ($rootScope, $controller, _$location_, serverData){
         $location = _$location_;
         scope = $rootScope.$new();
         $serverData = serverData;
-        createController = $controller('info', {'$scope': scope});
+        createController = $controller('infoCtrl', {'$scope': scope});
       }));
 
       it('should be defined', function(){

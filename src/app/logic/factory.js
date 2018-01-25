@@ -18,13 +18,17 @@ app.factory("serverData",function($http){
   function getType() {
     return $http.get("data/typeData.json");
   }
+  function getSocial(){
+    return $http.get('data/socialData.json');
+  }
   return {
     getLink: getLink,
     getMember: getMember,
     getAudio: getAudio,
     getEvent: getEvent,
     getBooking: getBooking,
-    getType: getType
+    getType: getType,
+    getSocial: getSocial
   }
 });
 

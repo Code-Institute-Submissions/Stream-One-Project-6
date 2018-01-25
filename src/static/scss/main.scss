@@ -113,3 +113,21 @@ form{
 .main-section{
   margin: 20px 0;
 }
+
+footer{
+  margin: 20px 0;
+  h2{
+    text-align: center;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+  }
+  li{
+    display: inline-block;
+    img{
+      margin-right: 20px;
+      width: 29px;
+    }
+  }
+}

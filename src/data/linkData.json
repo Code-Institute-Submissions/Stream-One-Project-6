@@ -8,12 +8,12 @@
     "content":"Music"
   },
   {
-    "href":"/#info",
-    "content":"Event Info"
-  },
-  {
     "href":"/#event",
     "content":"Events"
+  },
+  {
+    "href":"/#info",
+    "content":"Event Info"
   },
   {
     "href":"/#booking",

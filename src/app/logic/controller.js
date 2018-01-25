@@ -1,4 +1,4 @@
-app.controller("navbar",function($scope, serverData){
+app.controller("navbarCtrl",function($scope, serverData){
   // >Generate site wide nav links
   serverData.getLink().then(function(data){
     $scope.data=data.data;
@@ -19,7 +19,7 @@ app.controller("navbar",function($scope, serverData){
   });
 });
 
-app.controller("memberList",function($scope, serverData){
+app.controller("memberCtrl",function($scope, serverData){
   // >Generate member list
   serverData.getMember().then(function(data){
     $scope.data=data.data;
@@ -28,7 +28,7 @@ app.controller("memberList",function($scope, serverData){
   });
 });
 
-app.controller("audioCtl",function($scope, serverData,jukebox){
+app.controller("audioCtrl",function($scope, serverData,jukebox){
   // >Generate audio list
   serverData.getAudio().then(function(data){
     $scope.data=data.data;
@@ -122,7 +122,7 @@ app.controller("audioCtl",function($scope, serverData,jukebox){
   });
 });
 
-app.controller("event",function($scope, serverData){
+app.controller("eventCtrl",function($scope, serverData){
   serverData.getEvent().then(function(data){
     $scope.data=data.data;
   },function(err){
@@ -130,7 +130,7 @@ app.controller("event",function($scope, serverData){
   });
 });
 
-app.controller("book",function($scope, serverData, $timeout, $window){
+app.controller("bookCtrl",function($scope, serverData, $timeout, $window){
   serverData.getBooking().then(function(data){
     // >>DateTime picker setup
     $('#dtBox').DateTimePicker(
@@ -190,9 +190,17 @@ app.controller("book",function($scope, serverData, $timeout, $window){
   }
 });
 
-app.controller("info",function($scope, serverData){
+app.controller("infoCtrl",function($scope, serverData){
   // >Generate event type info
   serverData.getType().then(function(data){
+    $scope.data=data.data;
+  },function(err){
+    console.error(err);
+  });
+});
+
+app.controller('socialCtrl',function($scope, serverData){
+  serverData.getSocial().then(function(data){
     $scope.data=data.data;
   },function(err){
     console.error(err);
