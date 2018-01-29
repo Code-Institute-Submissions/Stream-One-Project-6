@@ -27,6 +27,11 @@ describe('AngularJS App: app', function(){
           var controller = createController;
           expect($serverData.getLink()).toBeDefined();
       });
+
+      it('serverData.getBrand function should be defined', function(){
+          var controller = createController;
+          expect($serverData.getBrand()).toBeDefined();
+      });
     });
     describe('memberCtrl', function(){
       var scope, $location, createController, $serverData;
@@ -75,6 +80,11 @@ describe('AngularJS App: app', function(){
       it('serverData.getAudio() function should be defined', function(){
           var controller = createController;
           expect($serverData.getAudio()).toBeDefined();
+      });
+
+      it('serverData.getAudioDesc() function should be defined', function(){
+          var controller = createController;
+          expect($serverData.getAudioDesc()).toBeDefined();
       });
     });
     describe('eventCtrl', function(){
