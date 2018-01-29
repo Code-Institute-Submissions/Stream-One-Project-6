@@ -23,6 +23,7 @@
 <section id="music" class="main-section" data-ng-controller="audioCtrl">
   <div class="container">
     <h2 class="title">Music</h2>
+    <p data-ng-repeat="item in desc">{{item.text}}</p>
     <div class="row">
       <div class="music-player col-xs-12 col-sm-offset-3 col-sm-6">
         <div class="thumbnail">

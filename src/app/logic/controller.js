@@ -127,6 +127,12 @@ app.controller("audioCtrl",function($scope, serverData,jukebox){
   },function(err){
     console.error(err);
   });
+
+  serverData.getAudioDesc().then(function(data){
+    $scope.desc=data.data;
+  },function(err){
+    console.error(err);
+  });
 });
 
 app.controller("eventCtrl",function($scope, serverData){

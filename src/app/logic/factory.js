@@ -24,6 +24,9 @@ app.factory("serverData",function($http){
   function getBrand(){
     return $http.get('data/brandData.json');
   }
+  function getAudioDesc(){
+    return $http.get('data/jukeboxDescData.json');
+  }
   return {
     getLink: getLink,
     getMember: getMember,
@@ -33,6 +36,7 @@ app.factory("serverData",function($http){
     getType: getType,
     getSocial: getSocial,
     getBrand: getBrand
+    getAudioDesc: getAudioDesc
   }
 });
 
