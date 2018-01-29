@@ -1,0 +1,22 @@
+[
+  {
+    "src":"content/audio/Clarksville.mp3",
+    "title":"Clarksville",
+    "cover":"content/image/cover.jpg"
+  },
+  {
+    "src":"content/audio/DaydreamBeliever.mp3",
+    "title":"Daydream Believer",
+    "cover":"content/image/cover1.jpg"
+  },
+  {
+    "src":"content/audio/SteppingStone.mp3",
+    "title":"Stepping Stone",
+    "cover":"content/image/cover2.png"
+  },
+  {
+    "src":"content/audio/ImABeliever.mp3",
+    "title":"I'm A Believer",
+    "cover":"content/image/cover3.jpg"
+  }
+]

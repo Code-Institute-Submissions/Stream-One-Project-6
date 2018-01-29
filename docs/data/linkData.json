@@ -1,0 +1,26 @@
+[
+  {
+    "href":"/#about",
+    "content":"About"
+  },
+  {
+    "href":"/#music",
+    "content":"Music"
+  },
+  {
+    "href":"/#event",
+    "content":"Events"
+  },
+  {
+    "href":"/#info",
+    "content":"Event Info"
+  },
+  {
+    "href":"/#booking",
+    "content":"Booking"
+  },
+  {
+    "href":"/#social",
+    "content":"Social Media"
+  }
+]

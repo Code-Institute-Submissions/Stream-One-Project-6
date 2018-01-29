@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "glyphicon glyphicon-music",
+    "name": "Concert",
+    "desc": "$20,000 for 20 song performace."
+  },
+  {
+    "icon": "glyphicon glyphicon-heart",
+    "name": "Wedding",
+    "desc": "$10,000 for a 10 song performace"
+  },
+  {
+    "icon": "glyphicon glyphicon-glass",
+    "name": "Party",
+    "desc": "$5,000 for a 5 song performace."
+  },
+  {
+    "icon": "glyphicon glyphicon-time",
+    "name": "Night Club",
+    "desc": "$15,000 for a 15 song performace."
+  }
+]

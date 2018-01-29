@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+html, body {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: #C9CB96;
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px; }
+
+main {
+  padding-top: 50px; }
+
+form .label {
+  font-size: 12px; }
+
+form fieldset {
+  padding: 10px 0; }
+  form fieldset span {
+    color: red; }
+
+#thankyou {
+  display: none; }
+  #thankyou .message {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  #thankyou h2 {
+    font-size: 40px;
+    text-align: center; }
+  #thankyou span {
+    font-size: 20px;
+    text-align: center; }
+
+#confirm-modal h2 {
+  text-align: center; }
+
+#confirm-modal .modal-body p {
+  font-size: 22px;
+  text-align: center; }
+  #confirm-modal .modal-body p.price {
+    color: green; }
+
+#info .glyphicon {
+  font-size: 100px;
+  text-align: center;
+  width: 100%; }
+
+#info .caption h2 {
+  text-align: center; }
+
+#loader {
+  background-color: white;
+  height: 110%;
+  position: fixed;
+  width: 110%;
+  z-index: 1031; }
+  #loader p {
+    font-size: 70px;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    -webkit-animation: loading .5s infinite;
+            animation: loading .5s infinite; }
+
+@-webkit-keyframes loading {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+@keyframes loading {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
+
+.btn-primary {
+  color: #fffFFF;
+  background-color: #e14e06;
+  border: 2px solid white; }
+
+.list-group-item {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #FFFFFF; }
+
+.label-default {
+  background-color: #e14e06;
+  border: 2px solid white; }
+
+.thumbnail {
+  background-color: #e14e06;
+  border: 2px solid white; }
+  .thumbnail .caption {
+    color: #FFFFFF; }
+
+.navbar-default {
+  background-color: #E14E07;
+  border-bottom: 2px solid white;
+  font-size: 18px; }
+  .navbar-default .navbar-toggle {
+    border-color: #FFFFFF; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #FFFFFF; }
+  .navbar-default .navbar-brand {
+    color: #FFFFFF;
+    font-size: 28px; }
+  .navbar-default .navbar-nav li a {
+    color: #FFFFFF; }
+
+.music-player {
+  position: relative; }
+  .music-player .glyphicon {
+    font-size: 300px;
+    height: 300px;
+    left: 50%;
+    opacity: .2;
+    padding: 0 0 0 22px;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+    width: 300; }
+    .music-player .glyphicon:hover {
+      opacity: 1; }
+  .music-player .list-group {
+    max-height: 350px;
+    overflow: auto; }
+
+.main-section {
+  margin: 20px 0; }
+
+footer {
+  margin: 20px 0; }
+  footer h2 {
+    text-align: center; }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  footer li {
+    display: inline-block; }
+    footer li img {
+      margin-right: 20px;
+      width: 29px; }
