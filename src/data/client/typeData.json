@@ -2,21 +2,21 @@
   {
     "icon": "glyphicon glyphicon-music",
     "name": "Concert",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illum, asperiores, pariatur assumenda sapiente aperiam mollitia eum corporis, aliquam nostrum magnam vitae soluta! Perferendis odio hic corporis nostrum delectus asperiores."
+    "desc": "$20,000 for 20 song performace."
   },
   {
     "icon": "glyphicon glyphicon-heart",
     "name": "Wedding",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illum, asperiores, pariatur assumenda sapiente aperiam mollitia eum corporis, aliquam nostrum magnam vitae soluta! Perferendis odio hic corporis nostrum delectus asperiores."
+    "desc": "$10,000 for a 10 song performace"
   },
   {
     "icon": "glyphicon glyphicon-glass",
     "name": "Party",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illum, asperiores, pariatur assumenda sapiente aperiam mollitia eum corporis, aliquam nostrum magnam vitae soluta! Perferendis odio hic corporis nostrum delectus asperiores."
+    "desc": "$5,000 for a 5 song performace."
   },
   {
     "icon": "glyphicon glyphicon-time",
     "name": "Night Club",
-    "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione illum, asperiores, pariatur assumenda sapiente aperiam mollitia eum corporis, aliquam nostrum magnam vitae soluta! Perferendis odio hic corporis nostrum delectus asperiores."
+    "desc": "$15,000 for a 15 song performace."
   }
 ]

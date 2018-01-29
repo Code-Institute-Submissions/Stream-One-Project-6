@@ -1,72 +1,22 @@
 [
   {
-    "src":"content/Audio Test 1.mp3",
-    "title":"Sample1",
-    "cover":"content/Placeholder Image.svg"
+    "src":"content/audio/Clarksville.mp3",
+    "title":"Clarksville",
+    "cover":"content/image/cover.jpg"
   },
   {
-    "src":"content/Audio Test 2.mp3",
-    "title":"Sample2",
-    "cover":"content/Placeholder Image.svg"
+    "src":"content/audio/DaydreamBeliever.mp3",
+    "title":"Daydream Believer",
+    "cover":"content/image/cover1.jpg"
   },
   {
-    "src":"content/Audio Test 1.mp3",
-    "title":"Sample1",
-    "cover":"content/Placeholder Image.svg"
+    "src":"content/audio/SteppingStone.mp3",
+    "title":"Stepping Stone",
+    "cover":"content/image/cover2.png"
   },
   {
-    "src":"content/Audio Test 2.mp3",
-    "title":"Sample2",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 1.mp3",
-    "title":"Sample1",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 2.mp3",
-    "title":"Sample2",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 1.mp3",
-    "title":"Sample1",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 2.mp3",
-    "title":"Sample2",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 1.mp3",
-    "title":"Sample1",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 2.mp3",
-    "title":"Sample2",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 1.mp3",
-    "title":"Sample1",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 2.mp3",
-    "title":"Sample2",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 1.mp3",
-    "title":"Sample1",
-    "cover":"content/Placeholder Image.svg"
-  },
-  {
-    "src":"content/Audio Test 2.mp3",
-    "title":"Sample2",
-    "cover":"content/Placeholder Image.svg"
+    "src":"content/audio/ImABeliever.mp3",
+    "title":"I'm A Believer",
+    "cover":"content/image/cover3.jpg"
   }
 ]

@@ -1,44 +1,44 @@
 [
   {
-    "loc":"Location",
-		"date":"Jan 27",
-    "img":"content/Placeholder Image.svg",
-    "city":"city",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias exercitationem asperiores rerum veniam quo odit voluptatem commodi quaerat quas ipsum."
+    "loc":"Chicago Illinois",
+		"date":"Jan 21",
+    "img":"content/image/chicago.jpg",
+    "city":"Chicago",
+    "desc":"We will be performing at the Metro.  3730 North Clark Street. Come and have fun with us."
   },
   {
-    "loc":"Location",
-		"date":"Jan 27",
-    "img":"content/Placeholder Image.svg",
-    "city":"city",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias exercitationem asperiores rerum veniam quo odit voluptatem commodi quaerat quas ipsum."
+    "loc":"Dublin Ireland",
+		"date":"Feb 05",
+    "img":"content/image/dublin.jpg",
+    "city":"Dublin",
+    "desc":"We will be performing at the Olympia Theatre. 72 Dame Street. Be there or be square."
   },
   {
-    "loc":"Location",
-		"date":"Jan 27",
-    "img":"content/Placeholder Image.svg",
-    "city":"city",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias exercitationem asperiores rerum veniam quo odit voluptatem commodi quaerat quas ipsum."
+    "loc":"London England",
+		"date":"April 15",
+    "img":"content/image/london.jpg",
+    "city":"London",
+    "desc":"Come and get groovy with us at Bush Hall. 310 Uxbridge Road. See you there."
   },
   {
-    "loc":"Location",
-		"date":"Jan 27",
-    "img":"content/Placeholder Image.svg",
-    "city":"city",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias exercitationem asperiores rerum veniam quo odit voluptatem commodi quaerat quas ipsum."
+    "loc":"San Diego California",
+		"date":"April 25",
+    "img":"content/image/san-diego.jpg",
+    "city":"San Diego",
+    "desc":"We will be at the House of Blues. 1055 Fifth Ave San Diego, CA 92101. Be there or be square."
   },
   {
-    "loc":"Location",
-		"date":"Jan 27",
-    "img":"content/Placeholder Image.svg",
-    "city":"city",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias exercitationem asperiores rerum veniam quo odit voluptatem commodi quaerat quas ipsum."
+    "loc":"San Francisco California",
+		"date":"April 27",
+    "img":"content/image/san-francisco.jpg",
+    "city":"San Francisco",
+    "desc":"Come and get groovy with us at the Fillmore Auditorium. 1805 Geary Street. Come and have fun with us."
   },
   {
-    "loc":"Location",
-		"date":"Jan 27",
-    "img":"content/Placeholder Image.svg",
-    "city":"city",
-    "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias exercitationem asperiores rerum veniam quo odit voluptatem commodi quaerat quas ipsum."
+    "loc":"Sydney Australia",
+		"date":"May 27",
+    "img":"content/image/Sydney.jpg",
+    "city":"Sydney",
+    "desc":"We will be performing at GoodGod. 53-55 Liverpool Street. Be there or be square."
   }
 ]
