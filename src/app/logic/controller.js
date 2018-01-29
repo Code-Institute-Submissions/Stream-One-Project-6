@@ -17,6 +17,11 @@ app.controller("navbarCtrl",function($scope, serverData){
   },function(err){
     console.error(err);
   });
+  serverData.getBrand().then(function(data){
+    $scope.brand=data.data;
+  },function(err){
+    console.error(err);
+  });
 });
 
 app.controller("memberCtrl",function($scope, serverData){
@@ -90,7 +95,9 @@ app.controller("audioCtrl",function($scope, serverData,jukebox){
         case "show":
           $(".music-player .cover-art")
           .attr("src", $scope.data[id].cover)
-          .slideDown();
+          .slideDown(function(){
+            $(this).height(300);
+          });
 
           $scope.playing=title;
 

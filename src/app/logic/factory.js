@@ -21,6 +21,9 @@ app.factory("serverData",function($http){
   function getSocial(){
     return $http.get('data/socialData.json');
   }
+  function getBrand(){
+    return $http.get('data/brandData.json');
+  }
   return {
     getLink: getLink,
     getMember: getMember,
@@ -28,7 +31,8 @@ app.factory("serverData",function($http){
     getEvent: getEvent,
     getBooking: getBooking,
     getType: getType,
-    getSocial: getSocial
+    getSocial: getSocial,
+    getBrand: getBrand
   }
 });
 
