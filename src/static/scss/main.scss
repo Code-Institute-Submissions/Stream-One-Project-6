@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
 html,body{
   height: 100%;
   width: 100%;
+}
+body{
+  background-color: #C9CB96;
+  font-family: 'Comfortaa', cursive;
+  font-size: 18px;
 }
 
 main{
@@ -65,10 +72,10 @@ form{
 #loader{
   background-color: white;
   // display: none;
-  height: 100%;
+  height: 110%;
   position: fixed;
-  width: 100%;
-  z-index: 9;
+  width: 110%;
+  z-index: 1031;
   p{
     font-size: 70px;
     left: 50%;
@@ -88,7 +95,49 @@ form{
     opacity: 0;
   }
 }
-
+.btn-primary {
+  color: #fffFFF;
+  background-color: #e14e06;
+  border: 2px solid white;
+}
+.list-group-item {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #FFFFFF;
+}
+.label-default {
+  background-color: #e14e06;
+  border: 2px solid white;
+}
+.thumbnail{
+  background-color: #e14e06;
+  border: 2px solid white;
+  .caption{
+    color: #FFFFFF;
+  }
+}
+.navbar-default{
+  background-color: #E14E07;
+  border-bottom: 2px solid white;
+  font-size: 18px;
+  .navbar-toggle{
+    border-color: #FFFFFF;
+    .icon-bar{
+      background-color: #FFFFFF;
+    }
+  }
+  .navbar-brand{
+    color: #FFFFFF;
+    font-size: 28px;
+  }
+  .navbar-nav{
+    li{
+      a{
+        color: #FFFFFF;
+      }
+    }
+  }     
+}
 .music-player{
   position: relative;
   .glyphicon{

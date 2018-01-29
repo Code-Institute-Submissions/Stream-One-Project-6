@@ -35,7 +35,7 @@ app.factory("serverData",function($http){
     getBooking: getBooking,
     getType: getType,
     getSocial: getSocial,
-    getBrand: getBrand
+    getBrand: getBrand,
     getAudioDesc: getAudioDesc
   }
 });
