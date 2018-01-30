@@ -1,6 +1,8 @@
 # Stream One Project
 
-This is my final project for Code Institute Stream One.
+This is my final project for Code Institute Stream One. The Example page can be found here: https://andreweliyah.github.io/Stream-One-Project/
+
+**Please note the Monkees are not affiliated with this site and the prices and dates and event are all made up. All info on the example page is used for demo/Grading purposes and are not real. Its just a course project. Thank you and have a nice day.**
 
 ## Installation
 ``` 
