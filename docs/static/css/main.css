@@ -52,10 +52,10 @@ form fieldset {
   text-align: center; }
 
 #loader {
-  background-color: white;
-  height: 110%;
+  background-color: #FFFFFF;
+  height: 100%;
   position: fixed;
-  width: 110%;
+  width: 100%;
   z-index: 1031; }
   #loader p {
     font-size: 70px;
@@ -80,30 +80,36 @@ form fieldset {
   50% {
     opacity: 0; } }
 
+.vid-banner video {
+  position: relative;
+  width: 100%;
+  height: auto; }
+
 .btn-primary {
-  color: #fffFFF;
+  color: #FFFFFF;
   background-color: #e14e06;
-  border: 2px solid white; }
+  border: 2px solid #FFFFFF; }
 
 .list-group-item {
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border: 1px solid #FFFFFF;
   color: #FFFFFF; }
 
 .label-default {
   background-color: #e14e06;
-  border: 2px solid white; }
+  border: 2px solid #FFFFFF; }
 
 .thumbnail {
   background-color: #e14e06;
-  border: 2px solid white; }
+  border: 2px solid #FFFFFF; }
   .thumbnail .caption {
     color: #FFFFFF; }
 
 .navbar-default {
   background-color: #E14E07;
-  border-bottom: 2px solid white;
-  font-size: 18px; }
+  border-bottom: 2px solid #FFFFFF;
+  font-size: 18px;
+  margin-bottom: 100%; }
   .navbar-default .navbar-toggle {
     border-color: #FFFFFF; }
     .navbar-default .navbar-toggle .icon-bar {
@@ -149,7 +155,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center; }
   footer li {
-    display: inline-block; }
+    display: inline-block;
+    padding: 10px; }
     footer li img {
-      margin-right: 20px;
       width: 29px; }

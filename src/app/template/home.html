@@ -1,3 +1,8 @@
+<!-- Video Banner -->
+<section class="vid-banner">
+  <video src="content/video/TheMonkees.mp4" autoplay muted loop></video>
+</section>
+
 <!-- About -->
 <section id="about" class="main-section">
   <div class="container" data-ng-controller="memberCtrl">
@@ -31,7 +36,6 @@
           <i class="glyphicon" data-ng-click="playback()" aria-hidden="true"></i>
           <div class="caption">
             <h3>{{playing}}</h3>
-            <!-- <p>{{item.desc}}</p> -->
           </div>
             <ul class="list-group">
               <li  class="list-group-item" data-ng-repeat="(id,item) in data" data-ng-click="playback(id)">{{item.title}}</li>

@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
+$c1: #FFFFFF;
+$c2: #C9CB96;
+$c3: red;
+$c4: green;
+$c5: #e14e06;
+
 html,body{
   height: 100%;
   width: 100%;
 }
+
 body{
-  background-color: #C9CB96;
+  background-color: $c2;
   font-family: 'Comfortaa', cursive;
   font-size: 18px;
 }
@@ -21,7 +28,7 @@ form{
   fieldset{
     padding: 10px 0;
     span{
-      color: red;
+      color: $c3;
     }
   }   
 }
@@ -43,6 +50,7 @@ form{
     text-align: center;
   }
 }
+
 #confirm-modal{
   h2{
     text-align: center;
@@ -52,11 +60,12 @@ form{
       font-size: 22px;
       text-align: center;
       &.price{
-        color: green;
+        color: $c4;
       }
     }
   }
 }
+
 #info{
   .glyphicon{
     font-size: 100px;
@@ -69,12 +78,12 @@ form{
     }
   }
 }
+
 #loader{
-  background-color: white;
-  // display: none;
-  height: 110%;
+  background-color: $c1;
+  height: 100%;
   position: fixed;
-  width: 110%;
+  width: 100%;
   z-index: 1031;
   p{
     font-size: 70px;
@@ -95,49 +104,62 @@ form{
     opacity: 0;
   }
 }
-.btn-primary {
-  color: #fffFFF;
-  background-color: #e14e06;
-  border: 2px solid white;
-}
-.list-group-item {
-  background-color: transparent;
-  border: 1px solid #ffffff;
-  color: #FFFFFF;
-}
-.label-default {
-  background-color: #e14e06;
-  border: 2px solid white;
-}
-.thumbnail{
-  background-color: #e14e06;
-  border: 2px solid white;
-  .caption{
-    color: #FFFFFF;
+.vid-banner{
+  video{
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 }
+.btn-primary{
+  color: $c1;
+  background-color: $c5;
+  border: 2px solid $c1;
+}
+
+.list-group-item {
+  background-color: transparent;
+  border: 1px solid $c1;
+  color: $c1;
+}
+
+.label-default {
+  background-color: $c5;
+  border: 2px solid $c1;
+}
+
+.thumbnail{
+  background-color: $c5;
+  border: 2px solid $c1;
+  .caption{
+    color: $c1;
+  }
+}
+
 .navbar-default{
   background-color: #E14E07;
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid $c1;
   font-size: 18px;
+  margin-bottom: 100%;
   .navbar-toggle{
-    border-color: #FFFFFF;
+    border-color: $c1;
     .icon-bar{
-      background-color: #FFFFFF;
+      background-color: $c1;
     }
   }
   .navbar-brand{
-    color: #FFFFFF;
+    color: $c1;
     font-size: 28px;
   }
   .navbar-nav{
     li{
       a{
-        color: #FFFFFF;
+        color: $c1;
       }
     }
   }     
 }
+
 .music-player{
   position: relative;
   .glyphicon{
@@ -159,6 +181,7 @@ form{
     overflow: auto;
   }
 }
+
 .main-section{
   margin: 20px 0;
 }
@@ -174,8 +197,8 @@ footer{
   }
   li{
     display: inline-block;
+    padding: 10px;
     img{
-      margin-right: 20px;
       width: 29px;
     }
   }

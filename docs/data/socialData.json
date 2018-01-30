@@ -1,12 +1,17 @@
 [
   {
-    "link": "https://www.twitter.com",
+    "link": "https://twitter.com/TheMonkees",
     "icon": "content/social/twitter.png",
     "alt": "twitter"
   },
   {
-    "link": "https://www.facebook.com",
+    "link": "https://www.facebook.com/TheMonkees",
     "icon": "content/social/facebook.png",
     "alt": "facebook"
+  },
+  {
+    "link": "https://www.youtube.com/channel/UCv1oY0OLtsEySHeP1TkYNqA",
+    "icon": "content/social/youtube.png",
+    "alt": "youtube"
   }
 ]
