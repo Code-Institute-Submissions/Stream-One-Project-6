@@ -176,9 +176,9 @@ gulp.task('doc',function(){
   .pipe(gulp.dest('docs/content/social'));
 
   // >>Build index.html
-  gulp.src(['src/pro-index/header.html', 
+  gulp.src(['src/doc-index/header.html', 
             'src/body.html', 
-            'src/pro-index/footer.html'])
+            'src/doc-index/footer.html'])
   .pipe(concat('index.html'))
   .pipe(gulp.dest('docs'));
 
