@@ -23,7 +23,7 @@ gulp.task('clean-doc',function(){
 gulp.task('dev',function(){
 
   // >>MOCK CONTENT
-  gulp.src('src/content/mock/**/*')
+  gulp.src('src/content/client/**/*')
   .pipe(gulp.dest('dev-build/content'));
 
   gulp.src('src/content/social/*')
@@ -51,7 +51,7 @@ gulp.task('dev',function(){
   .pipe(gulp.dest('dev-build/app'));
 
    // >>Copy Data
-  gulp.src('src/data/mock/**')
+  gulp.src('src/data/client/**')
   .pipe(gulp.dest('dev-build/data'));
 
   // >>Gather jQuery
@@ -262,5 +262,8 @@ gulp.task('build',function(cb){
   runSequence('clean-pro',['pro'],cb);
 });
 
+gulp.task('watch',function(){
+  gulp.watch('src/*',['dev-build'])
+});
 
 gulp.task('default',['dev-build']);
