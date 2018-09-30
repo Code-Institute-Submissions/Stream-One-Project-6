@@ -9,16 +9,23 @@ app.controller("navbarCtrl",function($scope, serverData){
   // >Generate site wide nav links
   serverData.getLink().then(function(data){
     $scope.data=data.data;
-
     $( "ul.nav" ).click(function(event){
-      
       var ele = $(event.target);
       var hash=$(ele[0].hash)
       if(hash){
         event.preventDefault();
-        $('html, body').stop().animate({
-            'scrollTop': hash.offset().top
-        }, 900, 'swing');
+        var winWidth = $(window).outerWidth();
+        if(winWidth >= 768 && winWidth <= 990){
+          console.log('stop')
+          $('html, body').stop().animate({
+            'scrollTop': hash.offset().top - 100
+          }, 900, 'swing');
+        }
+        else{
+          $('html, body').stop().animate({
+            'scrollTop': hash.offset().top - 50
+          }, 900, 'swing');
+        }
       }
     });
   },function(err){

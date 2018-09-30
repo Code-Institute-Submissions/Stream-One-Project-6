@@ -5,19 +5,25 @@ html, body {
 
 body {
   background-color: #C9CB96;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', helvetica;
   font-size: 18px; }
 
 main {
   padding-top: 50px; }
 
 form .label {
-  font-size: 12px; }
+  font-size: 15px; }
+
+form input, form select {
+  margin-top: 5px; }
 
 form fieldset {
   padding: 10px 0; }
   form fieldset span {
     color: red; }
+
+h2 {
+  color: #E14E07; }
 
 #thankyou {
   display: none; }
@@ -80,6 +86,13 @@ form fieldset {
   50% {
     opacity: 0; } }
 
+.error {
+  color: red;
+  font-size: 15px; }
+  .error li {
+    list-style: circle;
+    margin: 5px 0; }
+
 .vid-banner video {
   position: relative;
   width: 100%;
@@ -87,7 +100,7 @@ form fieldset {
 
 .btn-primary {
   color: #FFFFFF;
-  background-color: #e14e06;
+  background-color: #E14E07;
   border: 2px solid #FFFFFF; }
 
 .list-group-item {
@@ -96,11 +109,11 @@ form fieldset {
   color: #FFFFFF; }
 
 .label-default {
-  background-color: #e14e06;
+  background-color: #E14E07;
   border: 2px solid #FFFFFF; }
 
 .thumbnail {
-  background-color: #e14e06;
+  background-color: #E14E07;
   border: 2px solid #FFFFFF; }
   .thumbnail .caption {
     color: #FFFFFF; }
@@ -121,7 +134,11 @@ form fieldset {
     color: #FFFFFF; }
 
 .music-player {
-  position: relative; }
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
   .music-player .glyphicon {
     font-size: 300px;
     height: 300px;
@@ -143,9 +160,29 @@ form fieldset {
 .main-section {
   margin: 20px 0; }
 
+#about .bio {
+  margin-top: 20px;
+  text-align: justify; }
+
+#about .thumbnail {
+  max-width: 263px;
+  padding: 0;
+  width: auto; }
+  #about .thumbnail img {
+    display: block;
+    margin: 0;
+    max-width: 259px;
+    max-height: 194px;
+    width: 263px;
+    height: 171px; }
+  #about .thumbnail .caption {
+    text-align: center; }
+
 footer {
-  margin: 20px 0; }
+  background-color: #E14E07;
+  margin-top: 20px; }
   footer h2 {
+    color: #FFFFFF;
     text-align: center; }
   footer ul {
     display: -webkit-box;
