@@ -44,10 +44,7 @@ $ http-server <path-to-build-folder>
 
 **For dev build:**
 ```
-$ gulp dev-build // for manual dev building or
-$ gulp watch // for automatic dev building on file changes to the src folder
-// You may have to do the manual build first then run the watch command.
-// That way you can have the folder ready for the next command.
+$ gulp dev-build // for dev building or
 
 // to see the code in action run:
 $ http-server <path-to-build-folder>

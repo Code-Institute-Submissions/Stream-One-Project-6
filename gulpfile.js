@@ -262,8 +262,4 @@ gulp.task('build',function(cb){
   runSequence('clean-pro',['pro'],cb);
 });
 
-gulp.task('watch',function(){
-  gulp.watch('src/*',['dev-build'])
-});
-
 gulp.task('default',['dev-build']);
