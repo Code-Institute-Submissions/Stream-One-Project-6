@@ -1,12 +1,12 @@
 [
   {
     "link": "https://www.twitter.com",
-    "icon": "content/social/twitter.png",
+    "icon": "content/social/twitter.svg",
     "alt": "twitter"
   },
   {
     "link": "https://www.facebook.com",
-    "icon": "content/social/facebook.png",
+    "icon": "content/social/facebook.svg",
     "alt": "facebook"
   }
 ]

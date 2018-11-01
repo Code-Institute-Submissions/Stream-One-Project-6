@@ -5,7 +5,7 @@ app.controller("navbarCtrl",function($scope, serverData){
     $( "ul.nav" ).click(function(event){
       var ele = $(event.target);
       var hash=$(ele[0].hash)
-      if(hash){
+      if(hash.length > 0){
         event.preventDefault();
         var winWidth = $(window).outerWidth();
         if(winWidth >= 768 && winWidth <= 990){
