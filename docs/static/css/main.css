@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 html, body {
   height: 100%;
+  min-width: 400px;
   width: 100%; }
 
 body {
@@ -12,10 +13,11 @@ main {
   padding-top: 50px; }
 
 form .label {
-  font-size: 15px; }
+  font-size: 15px;
+  padding: 5px; }
 
 form input, form select {
-  margin-top: 5px; }
+  margin-top: 10px; }
 
 form fieldset {
   padding: 10px 0; }
@@ -25,14 +27,26 @@ form fieldset {
 h2 {
   color: #E14E07; }
 
+footer {
+  padding: 15px 5px;
+  background-color: #E14E07; }
+  footer h2 {
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-align: center; }
+
 #thankyou {
-  display: none; }
-  #thankyou .message {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%); }
+  background-color: white;
+  display: none;
+  left: 0;
+  min-height: 1000%;
+  min-width: 400px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
   #thankyou h2 {
     font-size: 40px;
     text-align: center; }
@@ -51,6 +65,7 @@ h2 {
 
 #info .glyphicon {
   font-size: 100px;
+  padding-top: 25px;
   text-align: center;
   width: 100%; }
 
@@ -74,17 +89,54 @@ h2 {
     -webkit-animation: loading .5s infinite;
             animation: loading .5s infinite; }
 
-@-webkit-keyframes loading {
-  0%, 100% {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
+#about .bio {
+  margin-top: 20px;
+  text-align: justify; }
 
-@keyframes loading {
-  0%, 100% {
-    opacity: 1; }
-  50% {
-    opacity: 0; } }
+#about .thumbnail {
+  max-width: 263px;
+  overflow: hidden;
+  padding: 0;
+  width: auto; }
+  #about .thumbnail .img {
+    height: 171px;
+    overflow: hidden;
+    width: 263px; }
+  #about .thumbnail img {
+    display: block;
+    margin: 0;
+    width: 100%; }
+  #about .thumbnail .caption {
+    text-align: center; }
+
+#social {
+  display: inline; }
+  #social ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0; }
+  #social li {
+    display: inline-block;
+    padding: 10px; }
+    #social li img {
+      width: 29px; }
+
+#event .thumbnail {
+  height: 393px; }
+
+#event img {
+  -o-object-position: 100% 50%;
+     object-position: 100% 50%;
+  width: 100%; }
+
+#event .img {
+  height: auto;
+  overflow: hidden;
+  width: 100%; }
 
 .error {
   color: red;
@@ -104,16 +156,17 @@ h2 {
   border: 2px solid #FFFFFF; }
 
 .list-group-item {
-  background-color: transparent;
-  border: 1px solid #FFFFFF;
+  background-color: #E86A12;
+  border: none;
   color: #FFFFFF; }
 
 .label-default {
   background-color: #E14E07;
-  border: 2px solid #FFFFFF; }
+  border: 3px solid #FFFFFF; }
 
 .thumbnail {
   background-color: #E14E07;
+  padding: 0;
   border: 2px solid #FFFFFF; }
   .thumbnail .caption {
     color: #FFFFFF; }
@@ -156,43 +209,41 @@ h2 {
   .music-player .list-group {
     max-height: 350px;
     overflow: auto; }
+  .music-player .list-group-item:last-child, .music-player .list-group-item:first-child {
+    border-radius: unset; }
 
 .main-section {
   margin: 20px 0; }
 
-#about .bio {
-  margin-top: 20px;
-  text-align: justify; }
+@-webkit-keyframes loading {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
 
-#about .thumbnail {
-  max-width: 263px;
-  padding: 0;
-  width: auto; }
-  #about .thumbnail img {
-    display: block;
-    margin: 0;
-    max-width: 259px;
-    max-height: 194px;
-    width: 263px;
-    height: 171px; }
-  #about .thumbnail .caption {
-    text-align: center; }
+@keyframes loading {
+  0%, 100% {
+    opacity: 1; }
+  50% {
+    opacity: 0; } }
 
-footer {
-  background-color: #E14E07;
-  margin-top: 20px; }
-  footer h2 {
-    color: #FFFFFF;
-    text-align: center; }
-  footer ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-  footer li {
-    display: inline-block;
-    padding: 10px; }
-    footer li img {
-      width: 29px; }
+@media (max-width: 768px) {
+  #about .thumbnail {
+    max-width: unset;
+    width: unset; }
+    #about .thumbnail .img {
+      height: unset;
+      width: inherit; }
+    #about .thumbnail img {
+      height: unset;
+      width: 100%; }
+  #event .thumbnail {
+    height: 393px; }
+  #event img {
+    -o-object-position: 100% 50%;
+       object-position: 100% 50%;
+    width: 100%; }
+  #event .img {
+    height: 206px;
+    overflow: hidden;
+    width: 100%; } }

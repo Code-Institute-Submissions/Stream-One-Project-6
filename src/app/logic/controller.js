@@ -180,7 +180,7 @@ app.controller("bookCtrl",function($scope, serverData, $timeout, $window){
           window.scroll(0,0)
           $('#thankyou').fadeIn();
           $timeout(function(){
-            $window.location.assign('/');
+            window.location.reload();
           },2000);
         });
       });
