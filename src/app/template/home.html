@@ -8,9 +8,11 @@
   <div class="container" data-ng-controller="memberCtrl">
     <h2>About</h2>
     <div class="row">
-      <div class="col-sm-6 col-md-4" data-ng-repeat="item in data[1]">
+      <div class="col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-0 col-md-3" data-ng-repeat="item in data[1]">
         <div class="thumbnail">
-          <img data-ng-src="{{item.img}}" alt="{{item.name}}">
+          <div class="img">
+            <img data-ng-src="{{item.img}}" alt="{{item.name}}">
+          </div>
           <div class="caption">
             <h3>{{item.name}}</h3>
             <p>{{item.desc}}</p>
@@ -52,9 +54,11 @@
   <div class="container">
     <h2 class="title">Upcoming Events</h2>
     <div class="row">
-      <div class="col-sm-6 col-md-4"  data-ng-repeat='event in data'>
+      <div class="col-xs-12 col-sm-6 col-md-4"  data-ng-repeat='event in data'>
         <div class="thumbnail" >
-          <img class="img-rounded" data-ng-src="{{event.img}}" alt="{{event.city}}">
+          <div class="img">
+            <img data-ng-src="{{event.img}}" alt="{{event.city}}">
+          </div>
           <div class="caption">
             <h3 class="subtitle">{{event.loc}} on {{event.date}}</h3>
             <p>{{event.desc}}</p>

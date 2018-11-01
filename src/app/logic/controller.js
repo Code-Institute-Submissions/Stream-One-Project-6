@@ -177,6 +177,7 @@ app.controller("bookCtrl",function($scope, serverData, $timeout, $window){
       $('#confirm-modal').modal('show');
       $('.modal .btn-success').click(function(){
         $('.main-section').slideUp(function(){
+          window.scroll(0,0)
           $('#thankyou').fadeIn();
           $timeout(function(){
             $window.location.assign('/');

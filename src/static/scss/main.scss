@@ -1,55 +1,94 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 
-$c1: #FFFFFF;
-$c2: #C9CB96;
-$c3: red;
-$c4: green;
-$c5: #E14E07;
+$accent: #FFFFFF;
+$background: #C9CB96;
+$error: red;
+$success: green;
+$primary: #E14E07;
+$primaryAlt: #E86A12;
+
+$min-width: 400px;
 
 html,body{
   height: 100%;
+  min-width: $min-width;
   width: 100%;
 }
-
 body{
-  background-color: $c2;
+  background-color: $background;
   font-family: 'Comfortaa', helvetica;
   font-size: 18px;
 }
-
 main{
   padding-top: 50px;
 }
-
 form{
   .label{
     font-size: 15px;
+    padding: 5px;
   }
 
   input,select{
-    margin-top: 5px;
+    margin-top: 10px;
   }
 
   fieldset{
     padding: 10px 0;
     span{
-      color: $c3;
+      color: $error;
     }
   }   
 }
-
 h2{
-  color: $c5
+  color: $primary
 }
-
-#thankyou{
-  display: none;
-  .message{
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
+nav{
+  // background-color: $primary;
+  // margin-top: 20px;
+  // h2{
+  //   color: $accent;
+  //   text-align: center;
+  // }
+  // ul{
+  //   display: flex;
+  //   justify-content: center;
+  //   padding: 0;
+  // }
+  // li{
+  //   display: inline-block;
+  //   padding: 10px;
+  //   img{
+  //     width: 29px;
+  //   }
+  // }
+}
+footer{
+  padding: 15px 5px;
+  h2{
+   color: $accent; 
+   margin: 0 auto;
+   text-align: center;
   }
+  background-color: $primary;
+}
+#thankyou{
+  background-color: white;
+  display: none;
+  left: 0;
+  min-height: 1000%;
+  min-width: $min-width;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  // .message{
+  //   left: 50%;
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translate(-50%,-50%);
+  // }
   h2{
     font-size: 40px;
     text-align: center;
@@ -59,7 +98,6 @@ h2{
     text-align: center;
   }
 }
-
 #confirm-modal{
   h2{
     text-align: center;
@@ -69,15 +107,15 @@ h2{
       font-size: 22px;
       text-align: center;
       &.price{
-        color: $c4;
+        color: $success;
       }
     }
   }
 }
-
 #info{
   .glyphicon{
     font-size: 100px;
+    padding-top: 25px;
     text-align: center;
     width: 100%;
   }
@@ -87,9 +125,8 @@ h2{
     }
   }
 }
-
 #loader{
-  background-color: $c1;
+  background-color: $accent;
   height: 100%;
   position: fixed;
   width: 100%;
@@ -104,25 +141,72 @@ h2{
     animation: loading .5s infinite;
   }
 }
-
-@keyframes loading{
-  0%,100%{
-    opacity: 1;
+#about{
+  .bio{
+    margin-top: 20px;
+    text-align: justify;
   }
-  50%{  
-    opacity: 0;
+  .thumbnail{
+    max-width: 263px;
+    overflow: hidden;
+    padding: 0;
+    width: auto;
+    .img{
+      height: 171px;
+      overflow: hidden;
+      width: 263px;
+    }
+    img{
+      display: block;
+      margin: 0;
+      // max-width: 259px;
+      // max-height: 194px;
+      // min-width: 263px;
+      // height: 171px;
+      width: 100%;
+    }
+    .caption{
+      text-align: center;
+    }
   }
 }
-
+#social{
+  display: inline;
+  ul{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  li{
+    display: inline-block;
+    padding: 10px;
+    img{
+      width: 29px;
+    }
+  }
+}
+#event{
+  .thumbnail{
+    height: 393px;
+  }
+  img{
+    object-position: 100% 50%;
+    width: 100%;
+  }
+  .img{
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+  }
+}
 .error{
-  color: $c3;
+  color: $error;
   font-size: 15px;
   li{
     list-style: circle;
     margin: 5px 0
   }
 }
-
 .vid-banner{
   video{
     position: relative;
@@ -130,56 +214,51 @@ h2{
     height: auto;
   }
 }
-
 .btn-primary{
-  color: $c1;
-  background-color: $c5;
-  border: 2px solid $c1;
+  color: $accent;
+  background-color: $primary;
+  border: 2px solid $accent;
 }
-
-.list-group-item {
-  background-color: transparent;
-  border: 1px solid $c1;
-  color: $c1;
+.list-group-item{
+  background-color: $primaryAlt;
+  border: none;
+  color: $accent;
 }
-
-.label-default {
-  background-color: $c5;
-  border: 2px solid $c1;
+.label-default{
+  background-color: $primary;
+  border: 3px solid $accent;
 }
-
 .thumbnail{
-  background-color: $c5;
-  border: 2px solid $c1;
+  background-color: $primary;
+  padding: 0;
+  border: 2px solid $accent;
   .caption{
-    color: $c1;
+    color: $accent;
   }
 }
-
 .navbar-default{
-  background-color: $c5;
-  border-bottom: 2px solid $c1;
+  background-color: $primary;
+  border-bottom: 2px solid $accent;
   font-size: 18px;
   margin-bottom: 100%;
   .navbar-toggle{
-    border-color: $c1;
+    border-color: $accent;
     .icon-bar{
-      background-color: $c1;
+      background-color: $accent;
     }
   }
   .navbar-brand{
-    color: $c1;
+    color: $accent;
     font-size: 28px;
   }
   .navbar-nav{
     li{
       a{
-        color: $c1;
+        color: $accent;
       }
     }
   }     
 }
-
 .music-player{
   position: relative;
   user-select: none;
@@ -201,51 +280,49 @@ h2{
     max-height: 350px;
     overflow: auto;
   }
+  .list-group-item:last-child,.list-group-item:first-child{
+    border-radius: unset;
+  }
 }
-
 .main-section{
   margin: 20px 0;
 }
-
-#about{
-  .bio{
-    margin-top: 20px;
-    text-align: justify;
+@keyframes loading{
+  0%,100%{
+    opacity: 1;
   }
-  .thumbnail{
-    max-width: 263px;
-    padding: 0;
-    width: auto;
-    img{
-      display: block;
-      margin: 0;
-      max-width: 259px;
-      max-height: 194px;
-      width: 263px;
-      height: 171px;
-    }
-    .caption{
-      text-align: center;
-    }
+  50%{  
+    opacity: 0;
   }
 }
 
-footer{
-  background-color: $c5;
-  margin-top: 20px;
-  h2{
-    color: $c1;
-    text-align: center;
+@media(max-width: 768px) {
+  #about{
+    .thumbnail{
+      max-width: unset;
+      width: unset;
+      .img{
+        height: unset;
+        width: inherit;
+      }
+      img{
+        height: unset;
+        width: 100%;
+      }
+    }
   }
-  ul{
-    display: flex;
-    justify-content: center;
-  }
-  li{
-    display: inline-block;
-    padding: 10px;
+  #event{
+    .thumbnail{
+      height: 393px;
+    }
     img{
-      width: 29px;
+      object-position: 100% 50%;
+      width: 100%;
+    }
+    .img{
+      height: 206px;
+      overflow: hidden;
+      width: 100%;
     }
   }
 }
